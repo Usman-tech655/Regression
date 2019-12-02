@@ -2,10 +2,10 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="com.genericode.ListenerTest" duration-ms="3" started-at="2019-11-26T17:03:54Z" finished-at="2019-11-26T17:03:54Z">
+  <suite name="com.genericode.ListenerTest" duration-ms="3" started-at="2019-12-02T18:53:13Z" finished-at="2019-12-02T18:53:13Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="3" started-at="2019-11-26T17:03:54Z" finished-at="2019-11-26T17:03:54Z">
+    <test name="Command line test" duration-ms="3" started-at="2019-12-02T18:53:13Z" finished-at="2019-12-02T18:53:13Z">
     </test> <!-- Command line test -->
   </suite> <!-- com.genericode.ListenerTest -->
 </testng-results>

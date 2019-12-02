@@ -1,11 +1,13 @@
 package com.genericode;
 
-import org.testng.annotations.BeforeTest;
+
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 import com.Insite.qa.util.TestUtil;
 import com.generic.IotHub;
