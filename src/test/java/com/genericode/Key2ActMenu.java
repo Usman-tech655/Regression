@@ -7,38 +7,28 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
 
 import com.generic.Menu;
 
-public class Key2ActMenu extends Menu{
+public class Key2ActMenu {
 
-	public Key2ActMenu() throws Throwable {
-		super();
-		
-	}
-	@BeforeTest 
+	WebDriver driver;
+	
+	@BeforeMethod
 	public void Setup() throws Throwable {
-		intiazlization();
-		login();
-		getmenu();
-		getAdmin();
-		Thread.sleep(3000);
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); //Screen Shot
-		try {
-			FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		
+		Menu.intiazlization(driver);
+		Menu.login();
+		Thread.sleep(30000);
+		Menu.getmenu();
+		Menu.getAdmin();	
 	}
 	
 	@Test 
 	public void EditCompanyView() throws Throwable {
 		Thread.sleep(3000);
-		geteditjcompany();
+		Menu.geteditjcompany();
 	}
 	/*@Test (enabled =false)
 	public void editbilling() throws Throwable {
@@ -58,10 +48,10 @@ public class Key2ActMenu extends Menu{
 	public void DelUser() {
 		getdeletuser();
 	}*/
-	@Test 
+	@Test (dependsOnMethods= {"EditCompanyView"})
 	public void ManageRoles() throws Throwable {
 		Thread.sleep(50000);
-		getMrole();
+		Menu.getmanagerole();
 	}
 	
 	

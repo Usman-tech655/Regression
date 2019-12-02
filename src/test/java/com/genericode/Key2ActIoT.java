@@ -1,51 +1,70 @@
 package com.genericode;
 
 import org.testng.annotations.BeforeTest;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
+import com.Insite.qa.util.TestUtil;
 import com.generic.IotHub;
+import com.key2act.qa.base.Key2ActBase;
 
-public class Key2ActIoT extends IotHub {
+@Listeners(ListenerTest.class)
+public class Key2ActIoT  {
+
+	WebDriver driver;
 	
-	
-	public Key2ActIoT () {
-		super();
-	}
-	
+
 	@BeforeTest
 	public void setup() throws Throwable {
-		intiazlization();
-		login();
-		getmenu();
-	}
-	
-	
-	@Test
-	public void IOT() throws Throwable {
-		getIot();
-		
-		
-	}
-	@Test (dependsOnMethods = {"IOT"})
-	public void Agent() throws Throwable {
-		getAgent();
+		driver= Key2ActBase.intiazlization(driver);
+		Key2ActBase.login();
+		Key2ActBase.getmenu();
+		TestUtil.captureScreenShot(driver, "Menu");
 		
 	}
 
+
+	@Test
+	public void IOT() throws Throwable {
+		IotHub.getIot();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}
+	@Test(enabled=false)// (dependsOnMethods = {"IOT"})
+	public void Agent() throws Throwable {
+		IotHub.getAgent();
+
+	}
+	/*@Test (dependsOnMethods = {"IOT"})
+	public void Assing() throws Throwable {
+		
+		IotHub.getAssing();
+
+		
+	}*/
+	@Test (dependsOnMethods = {"IOT"})
+	public void ManageAgent() throws Throwable {
+		IotHub.getiotManage();
+		Key2ActBase.getSignO();
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

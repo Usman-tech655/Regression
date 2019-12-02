@@ -9,7 +9,7 @@ public class Menu extends Key2ActBase{
 		super();
 	}
 	
-	public WebDriver geteditjcompany() {
+	public static WebDriver geteditjcompany() {
 		pf.getEditcompanyy().get(0).click();
 		pf.getEditjcompany().get(0).click();
 		pf.getEditjcompanyname().get(0).sendKeys(prop.getProperty(""));
@@ -19,7 +19,7 @@ public class Menu extends Key2ActBase{
 		
 	}
 	
-	public WebDriver geteditbilling() {
+	public static WebDriver geteditbilling() {
 		pf.getEditcompany().get(0).click();
 		pf.getEditname().get(0).sendKeys(prop.getProperty(" "));
 		pf.getEditemail().get(0).sendKeys(prop.getProperty(" "));
@@ -33,7 +33,7 @@ public class Menu extends Key2ActBase{
 
 		return driver;
 	}
-	public WebDriver getmanageuser() {
+	public static WebDriver getmanageuser() {
 		pf.getManageuser().get(0).click();
 		pf.getInviteuser().get(0).click();
 		pf.getInviteemail().get(0).sendKeys(prop.getProperty(" "));
@@ -44,7 +44,7 @@ public class Menu extends Key2ActBase{
 		
 		return driver;
 	}
-	public WebDriver getmanagerole() {
+	public static WebDriver getmanagerole() {
 		pf.getManagerol().get(0).click();
 		pf.getRolechange().get(0).click();
 		pf.getManageuserole().get(0).click();
@@ -57,7 +57,7 @@ public class Menu extends Key2ActBase{
 		pf.getRemoveuser().get(0).click();
 		return driver;
 	}
-	public WebDriver getMrole() {
+	public static WebDriver getMrole() {
 		pf.getUserole().get(0).click();
 		pf.getCreaterole().get(0).click();
 		pf.getRolename().get(0).sendKeys(prop.getProperty(" "));

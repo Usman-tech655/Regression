@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-<listeners>
-        <listener class-name="com.genericode.ListenerTest"/>
-    </listeners>
-  <test thread-count="5" name="Test">
+<suite thread-count="10" name="Suite" parallel="classes">
+  <test thread-count="10" name="Test" parallel="classes">
     <classes>
+      <class name="com.genericode.Forgotpwd"/>
       <class name="com.genericode.Key2ActLogin"/>
+      <class name="com.genericode.IoTAgent"/>
       <class name="com.genericode.Key2ActUpdatePass"/>
       <class name="com.genericode.Key2ActIoT"/>
       <class name="com.genericode.Key2ActMenu"/>

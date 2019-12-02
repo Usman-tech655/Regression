@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.genericode.Key2ActSignUp">
+      <class name="com.genericode.Key2ActLogin">
         <methods>
-          <include name="signuppage"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.genericode.Key2ActSignUp -->
+      </class> <!-- com.genericode.Key2ActLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,6 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
+/**
+ * @author ukarim
+ *
+ */
 public class MasterPageFactory {
 	WebDriver driver;
 	WebDriverWait wait;
@@ -57,7 +61,7 @@ public class MasterPageFactory {
 	@FindBy(xpath="//*[text()='Update']")
 	private List<WebElement>create1;
 	//@FindBy(xpath="//*[@id='name']")
-	@FindBy(xpath="//*[@class='fas fa-caret-down']")
+	@FindBy(xpath="//*[@id='name']")
 	private List<WebElement> cname;
 	@FindBy(xpath="//*[@id='select-contractorName']")
 	public List<WebElement>ctr;
@@ -65,7 +69,7 @@ public class MasterPageFactory {
 	private List<WebElement>type;
 	@FindBy(xpath="//*[@id='addressSearch']")
 	private List<WebElement>address;
-	@FindBy(xpath="(//*[@class='jss95'])[6]")
+	@FindBy(xpath="//span[text()='Create']")
 	private List<WebElement>create;
 	//@FindBy(xpath="//*[@id='root']/div/header/button/i")
 	@FindBy(xpath="(//i[text()='apps'])[1]")
@@ -184,6 +188,22 @@ public class MasterPageFactory {
 	private List<WebElement>Aserial;
 	@FindBy(xpath="//span[text()='Create']")
 	private List<WebElement>ASave;
+	@FindBy(xpath="(//*[@class='fas fa-ellipsis-h'])[17]")
+	private List<WebElement>assignA;
+	@FindBy(xpath="//text()[.='Assign Agent']/ancestor::li[1]")
+	private List<WebElement>AgentAssign;
+	@FindBy(xpath="//text()[.='Manage Agent']/ancestor::li[1]")
+	private List <WebElement>ManageA;
+	@FindBy(xpath="(//span[text()='Configure BAS Network'])[1]")
+	private List<WebElement>config;
+	@FindBy(xpath="//button[text()='Forgot Password?']")
+	private List<WebElement>forgot;
+	@FindBy(xpath="//*[@id='email']")
+	private List<WebElement>frgtemail;
+	@FindBy(xpath="//span[text()='Reset Password']")
+	private List<WebElement>frgtreset;
+	@FindBy(xpath="//*[@class='fas fa-bars']")
+	private List<WebElement>signObar;
 	@FindBy(xpath="//*[text()='Sign Out']")
 	private List<WebElement>signout;
 	public void Wait() {
@@ -194,7 +214,7 @@ public class MasterPageFactory {
 	public void waite() {
 		wait.until(ExpectedConditions.elementToBeClickable((By) billingsave));
 	}
-
+	
 
 
 
@@ -488,6 +508,38 @@ public class MasterPageFactory {
 	public List<WebElement> getASave() {
 		return ASave;
 	}
+	
+	public List<WebElement> getAgentAssign() {
+		return AgentAssign;
+	}
+	public List<WebElement> getAssignA() {
+		return assignA;
+	}
+	public List<WebElement> getForgot() {
+		return forgot;
+	}
+	public List<WebElement> getFrgtemail() {
+		return frgtemail;
+	}
+	public List<WebElement> getFrgtreset() {
+		return frgtreset;
+	}
+	public List<WebElement> getManageA() {
+		return ManageA;
+	}
+	public List<WebElement> getConfig() {
+		return config;
+	}
+	public List<WebElement> getSignObar() {
+		return signObar;
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -10,7 +10,7 @@ public class UpdatePassword extends Key2ActBase{
 		super();
 	}
 	
-	public WebDriver getupdatepwd() {
+	public static WebDriver getupdatepwd() {
 		pf.getChange().get(0).click();
 		pf.getUpdate().get(0).sendKeys(prop.getProperty("old"));
 		pf.getNewpass().get(0).sendKeys(prop.getProperty("new"));

@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.genericode.ListenerTest"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="10" name="Test(failed)" parallel="classes">
     <classes>
+      <class name="com.genericode.Key2ActSignUp">
+        <methods>
+          <include name="signuppage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.genericode.Key2ActSignUp -->
+      <class name="com.genericode.Forgotpwd">
+        <methods>
+          <include name="password"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.genericode.Forgotpwd -->
       <class name="com.genericode.Key2ActUpdatePass">
         <methods>
           <include name="updatepasswd"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- com.genericode.Key2ActUpdatePass -->
-      <class name="com.genericode.Key2ActLogin">
-        <methods>
-          <include name="verifyLogin"/>
-          <include name="TearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.genericode.Key2ActLogin -->
-      <class name="com.genericode.Key2ActCreateC">
-        <methods>
-          <include name="start"/>
-          <include name="TearDown"/>
-          <include name="createcompany"/>
-        </methods>
-      </class> <!-- com.genericode.Key2ActCreateC -->
       <class name="com.genericode.Key2ActMenu">
         <methods>
           <include name="ManageRoles"/>
@@ -33,6 +28,20 @@
           <include name="EditCompanyView"/>
         </methods>
       </class> <!-- com.genericode.Key2ActMenu -->
+      <class name="com.genericode.Key2ActCreateC">
+        <methods>
+          <include name="start"/>
+          <include name="TearDown"/>
+          <include name="createcompany"/>
+        </methods>
+      </class> <!-- com.genericode.Key2ActCreateC -->
+      <class name="com.genericode.Key2ActIoT">
+        <methods>
+          <include name="IOT"/>
+          <include name="setup"/>
+          <include name="ManageAgent"/>
+        </methods>
+      </class> <!-- com.genericode.Key2ActIoT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
