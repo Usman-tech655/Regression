@@ -1,19 +1,14 @@
 package com.genericode;
 
-
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Insite.qa.util.TestUtil;
 import com.generic.IotHub;
 import com.key2act.qa.base.Key2ActBase;
 
-@Listeners(ListenerTest.class)
+
 public class Key2ActIoT  {
 
 	WebDriver driver;

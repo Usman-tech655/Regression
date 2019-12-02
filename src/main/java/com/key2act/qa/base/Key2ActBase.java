@@ -7,16 +7,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
 import com.Insite.qa.util.TestUtil;
-import com.genericode.ListenerTest;
+
 import com.key2act.PageObject.MasterPageFactory;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Key2ActBase extends ListenerTest {
+public class Key2ActBase {
 
 	protected static WebDriver driver;
 	protected static MasterPageFactory pf;
@@ -25,8 +22,8 @@ public class Key2ActBase extends ListenerTest {
 
 
 	public static  WebDriver intiazlization(WebDriver driver) throws Throwable {
-		//		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
+				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
 		//		WebDriverManager.firefoxdriver().setup();
 		//		WebDriverManager.operadriver().setup();
 		//		WebDriverManager.iedriver().setup();
