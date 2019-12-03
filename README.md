@@ -1,4 +1,4 @@
-# README #
+README #
 
 Selenium WebDriver
 
@@ -25,6 +25,23 @@ Selenium WebDriver
 * In Commit message write any message
 * Enter git push  at the command line to copy your files from your local repository to Bitbucket.
 * If prompted for authentication, enter your Bitbucket password
+
+### How To Install Maven In Windows ##
+* Download Maven Zip File Extract It
+* Set Enivroment Variables (M2_Home , MAVEN_Home)
+i)Right Click MyComputer
+ii)Propterties 
+iv)Advance System Setting
+v)Envir Variable
+* Set Path Variable (%MAVEN_HOME%)
+
+### How To Run Maven Project From Terminal ###
+Prerequisites
+i)TestNG Plugin In Pom.xml
+ii)TestNG Dependency In Pom.xml
+iii)Should Be TestNG Tests
+iv)Must Have TestNG.xml
+*Add maven-surefire-plugin In Pom.xml
 
 ### Who do I talk to? ###
 
