@@ -20,7 +20,7 @@ public class Key2ActUpdatePass{
 		 UpdatePassword.login();
 	 }
 	 @Test
-	 public void updatepasswd() {
+	 public void updatepasswd() throws InterruptedException {
 		 UpdatePassword. getupdatepwd();
 	 }
 	

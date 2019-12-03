@@ -26,6 +26,7 @@ public class Singup extends Key2ActBase {
 	
 	
 	public static WebDriver getsignup() throws InterruptedException {
+		Thread.sleep(30000);
 
 		pf.getSignup().get(0).click();
 		pf.getSignupfirst().get(0).sendKeys(prop.getProperty("firstname"));

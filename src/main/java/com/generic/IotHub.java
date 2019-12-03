@@ -13,7 +13,8 @@ public class IotHub extends Key2ActBase {
 		super();
 		
 	}
-	 public static WebDriver getIot() {
+	 public static WebDriver getIot() throws Throwable {
+		 Thread.sleep(3000);
 		 pf.getIot().get(0).click();
 		 pf.getIot1().get(0).click();
 		
