@@ -50,7 +50,7 @@ public class MasterPageFactory {
 	private List <WebElement> signupconfirm;
 	@FindBy(xpath="//span[text()='Sign Up']")
 	private List <WebElement> hitsignup;
-	@FindBy(xpath="//*[text()='Create Company']")
+	@FindBy(xpath="(//span[text()=concat('Jabbot',\"'\",'s Company')])[2]")
 	private List<WebElement>company;
 	@FindBy(xpath="(//button[@type='button'])[3]")
 	private List <WebElement> change;
@@ -58,6 +58,12 @@ public class MasterPageFactory {
 	private List <WebElement>update;
 	@FindBy(xpath="//*[@id='newPassword']")
 	private List <WebElement>newpass;
+	@FindBy(xpath="//text()[contains(.,'+ Create New Company')]/ancestor::li[1]")
+	private List <WebElement> createc;
+	public List<WebElement> getCreatec() {
+		return createc;
+	}
+
 	@FindBy(xpath="//*[text()='Update']")
 	private List<WebElement>create1;
 	//@FindBy(xpath="//*[@id='name']")
@@ -144,7 +150,7 @@ public class MasterPageFactory {
 	private List<WebElement>editrolesave;
 	@FindBy(xpath="//*[@class='fas fa-caret-down']")  
 	public List<WebElement> editcompanyy;
-	@FindBy(xpath="(/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/div[1]/li[1]")//li[@role='menuitem'])[1]
+	@FindBy(xpath="(//li[@role='menuitem'])[1]")
 	private List<WebElement> editjcompany;
 	@FindBy(xpath="//*[@id='name']")
 	private List<WebElement>editjcompanyname;
@@ -158,13 +164,13 @@ public class MasterPageFactory {
 	private List <WebElement>inviteuser;
 	@FindBy(xpath="//*[@id='email']")
 	private List <WebElement> inviteemail;
-	@FindBy(xpath="(//text()[.='​']/ancestor::div[1])[2]")
+	@FindBy(xpath="((//text()[.='​']/ancestor::div[2])[2]")
 	private List <WebElement>inviterole;
 	@FindBy(xpath="//text()[.='Read Only']/ancestor::li[1]") 
 	private List <WebElement>roleselect;
 	@FindBy(xpath="//span[text()='Create']")
 	private List<WebElement>createuser;
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[2]/div[3]/main[1]/div[1]/div[1]/div[2]/table[1]/tbody[1]/tr[16]/td[4]/button[1]/span[1]/i[1]")
+	@FindBy(xpath="//span[text()='Manage Roles']")
 	private List<WebElement>managerol;
 	@FindBy(xpath="//text()[.='Manage User']/ancestor::li[1]")
 	private List <WebElement>rolechange;
@@ -188,7 +194,7 @@ public class MasterPageFactory {
 	private List<WebElement>Aserial;
 	@FindBy(xpath="//span[text()='Create']")
 	private List<WebElement>ASave;
-	@FindBy(xpath="(//*[@id=\"root\"]/div/div/div[2]/div[3]/main/div/table/tbody/tr[18]/td[7]/button")
+	@FindBy(xpath="//div[@id='root']/div/div/div[2]/div[3]/main/div/table/tbody/tr[18]/td[7]/button/span/i")
 	private List<WebElement>assignA;
 	@FindBy(xpath="//text()[.='Assign Agent']/ancestor::li[1]")
 	private List<WebElement>AgentAssign;

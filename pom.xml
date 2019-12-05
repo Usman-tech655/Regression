@@ -34,8 +34,9 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 				<includes>
-				<include>
-				</include>Key2ActLogin</includes>
+				<include>Key2ActLogin</include>
+				<include>Key2ActUpdatePass</include>
+				</includes>
 					<!-- <suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles> -->

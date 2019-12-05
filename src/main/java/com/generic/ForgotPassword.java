@@ -8,7 +8,8 @@ import com.key2act.qa.base.Key2ActBase;
 public class ForgotPassword extends Key2ActBase {
 	
 	
-	public static WebDriver getForgotpwd() {
+	public static WebDriver getForgotpwd() throws Throwable {
+		Thread.sleep(30000);
 		pf.getForgot().get(0).click();
 		pf.getFrgtemail().get(0).sendKeys(prop.getProperty("forgotpassword"));
 		pf.getFrgtemail().get(0).sendKeys(Keys.TAB);

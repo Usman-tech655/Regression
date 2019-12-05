@@ -12,23 +12,22 @@ import org.testng.annotations.*;
 
 import com.generic.Menu;
 
-public class Key2ActMenu {
+public class Key2ActMenu extends Menu {
 
 	WebDriver driver;
 	
 	@BeforeMethod
 	public void Setup() throws Throwable {
-		Menu.intiazlization(driver);
-		Menu.login();
-		Thread.sleep(30000);
-		Menu.getmenu();
-		Menu.getAdmin();	
+		intiazlization(driver);
+		login();
+		getmenu();
+		getAdmin();	
 	}
 	
 	@Test 
 	public void EditCompanyView() throws Throwable {
-		Thread.sleep(3000);
-		Menu.geteditjcompany();
+		
+		geteditjcompany();
 	}
 	/*@Test (enabled =false)
 	public void editbilling() throws Throwable {
@@ -51,7 +50,7 @@ public class Key2ActMenu {
 	@Test (dependsOnMethods= {"EditCompanyView"})
 	public void ManageRoles() throws Throwable {
 		Thread.sleep(50000);
-		Menu.getmanagerole();
+		getmanagerole();
 	}
 	
 	

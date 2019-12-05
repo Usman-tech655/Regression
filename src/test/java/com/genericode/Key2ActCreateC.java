@@ -10,17 +10,17 @@ import com.key2act.qa.base.Key2ActBase;
 
     
 
-public class Key2ActCreateC  {
+public class Key2ActCreateC extends Createcompany {
 	 WebDriver driver;
 	@BeforeTest
 	public void start() throws Throwable{
-		Key2ActBase.intiazlization(driver);
-		Key2ActBase.login();
+		intiazlization(driver);
+		login();
 		
 	}
 	@Test
 	public void createcompany() throws InterruptedException {
-		Createcompany.company() ;
+		company() ;
 	}
 	@AfterTest (enabled = false)
 	public void TearDown() {

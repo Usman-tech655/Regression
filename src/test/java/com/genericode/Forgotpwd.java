@@ -6,16 +6,16 @@ import org.testng.annotations.*;
 import com.generic.ForgotPassword;
 import com.key2act.qa.base.Key2ActBase;
 
-public class Forgotpwd  {
+public class Forgotpwd extends ForgotPassword  {
 	WebDriver driver;
 	
 	@BeforeTest
 	public void setup() throws Throwable {
-		driver= Key2ActBase.intiazlization(driver);
+		intiazlization(driver);
 	}
 	@Test
-	public void password() {
-		 ForgotPassword.getForgotpwd();
+	public void password() throws Throwable {
+		 getForgotpwd();
 	}
 	
 

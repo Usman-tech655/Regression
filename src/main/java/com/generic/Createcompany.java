@@ -6,8 +6,11 @@ import com.key2act.qa.base.Key2ActBase;
 
 public class Createcompany extends Key2ActBase {
 	public static void company() throws InterruptedException {
+		Thread.sleep(30000);
 
 		pf.getCompany().get(0).click();
+		Thread.sleep(30000);
+		pf.getCreatec().get(0).click();
 		pf.getCname().get(0).sendKeys("QA HAVC");
 		pf.ctr.get(0).click();
 		pf.getType().get(0).click();

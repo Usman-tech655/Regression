@@ -3,24 +3,6 @@
 <suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
   <test thread-count="10" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="com.genericode.Key2ActSignUp">
-        <methods>
-          <include name="signuppage"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.genericode.Key2ActSignUp -->
-      <class name="com.genericode.Forgotpwd">
-        <methods>
-          <include name="password"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.genericode.Forgotpwd -->
-      <class name="com.genericode.Key2ActUpdatePass">
-        <methods>
-          <include name="updatepasswd"/>
-          <include name="Setup"/>
-        </methods>
-      </class> <!-- com.genericode.Key2ActUpdatePass -->
       <class name="com.genericode.Key2ActMenu">
         <methods>
           <include name="ManageRoles"/>
@@ -35,6 +17,12 @@
           <include name="createcompany"/>
         </methods>
       </class> <!-- com.genericode.Key2ActCreateC -->
+      <class name="com.genericode.Forgotpwd">
+        <methods>
+          <include name="password"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.genericode.Forgotpwd -->
       <class name="com.genericode.Key2ActIoT">
         <methods>
           <include name="IOT"/>
@@ -42,6 +30,12 @@
           <include name="ManageAgent"/>
         </methods>
       </class> <!-- com.genericode.Key2ActIoT -->
+      <class name="com.genericode.Key2ActUpdatePass">
+        <methods>
+          <include name="updatepasswd"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.genericode.Key2ActUpdatePass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.genericode.Key2ActIoT">
+      <class name="com.genericode.Key2ActUpdatePass">
         <methods>
-          <include name="IOT"/>
-          <include name="setup"/>
-          <include name="ManageAgent"/>
+          <include name="updatepasswd"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- com.genericode.Key2ActIoT -->
+      </class> <!-- com.genericode.Key2ActUpdatePass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

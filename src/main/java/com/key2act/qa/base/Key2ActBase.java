@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
 import com.Insite.qa.util.TestUtil;
 
 import com.key2act.PageObject.MasterPageFactory;
@@ -22,13 +24,13 @@ public class Key2ActBase {
 
 
 	public static  WebDriver intiazlization(WebDriver driver) throws Throwable {
-				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-		//WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		//		WebDriverManager.chromedriver().setup();
 		//		WebDriverManager.firefoxdriver().setup();
 		//		WebDriverManager.operadriver().setup();
 		//		WebDriverManager.iedriver().setup();
-		//		ChromeOptions option = new ChromeOptions();
-		//		option.addArguments("--headless");
+		//ChromeOptions option = new ChromeOptions();
+		//option.addArguments("--headless");
 		driver = new ChromeDriver();
 
 		FileInputStream fis = new FileInputStream("./src/main/java/Key2Actsource/Key2Act.properties");
@@ -69,7 +71,7 @@ public class Key2ActBase {
 	public static WebDriver getSignO() {
 		pf.getSignObar().get(0).click();
 		pf.getSignout().get(0).click();
-		
+
 		return driver;
 	}
 }
