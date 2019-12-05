@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="100776" started-at="2019-12-05T13:55:33Z" finished-at="2019-12-05T13:57:14Z">
+  <suite name="Suite" duration-ms="101311" started-at="2019-12-05T15:59:31Z" finished-at="2019-12-05T16:01:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="100776" started-at="2019-12-05T13:55:33Z" finished-at="2019-12-05T13:57:14Z">
+    <test name="Test" duration-ms="101311" started-at="2019-12-05T15:59:31Z" finished-at="2019-12-05T16:01:12Z">
       <class name="com.genericode.Key2ActLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Key2ActLogin@343f4d3d]" name="setup" duration-ms="14494" started-at="2019-12-05T13:55:49Z" finished-at="2019-12-05T13:56:04Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Key2ActLogin@343f4d3d]" name="setup" duration-ms="14126" started-at="2019-12-05T15:59:47Z" finished-at="2019-12-05T16:00:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- com.genericode.Key2ActLogin -->
       <class name="com.genericode.Key2ActUpdatePass">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.genericode.Key2ActUpdatePass@57baeedf]" name="Setup" is-config="true" duration-ms="15807" started-at="2019-12-05T13:55:33Z" finished-at="2019-12-05T13:55:49Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.genericode.Key2ActUpdatePass@57baeedf]" name="Setup" is-config="true" duration-ms="16722" started-at="2019-12-05T15:59:31Z" finished-at="2019-12-05T15:59:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="updatepasswd()[pri:0, instance:com.genericode.Key2ActUpdatePass@57baeedf]" name="updatepasswd" duration-ms="70459" started-at="2019-12-05T13:56:04Z" finished-at="2019-12-05T13:57:14Z">
+        <test-method status="PASS" signature="updatepasswd()[pri:0, instance:com.genericode.Key2ActUpdatePass@57baeedf]" name="updatepasswd" duration-ms="70452" started-at="2019-12-05T16:00:01Z" finished-at="2019-12-05T16:01:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatepasswd -->
