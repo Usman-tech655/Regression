@@ -6,17 +6,21 @@ import org.testng.annotations.Test;
 
 import com.generic.Singup;
 
-public class Key2ActSignUp {
+public class Key2ActSignUp extends Singup {
 
+	public Key2ActSignUp() throws Throwable {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	WebDriver driver;
 	@BeforeTest
 	public void setup() throws Throwable {
-		Singup.intiazlization(driver);
+		intiazlization(driver);
 		
 	}
 	@Test
 	public void signuppage() throws Throwable {
-		Singup.getsignup();
+		getsignup();
 	}
 
 }

@@ -24,14 +24,14 @@ public class Key2ActBase {
 
 
 	public static  WebDriver intiazlization(WebDriver driver) throws Throwable {
-		//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		//		WebDriverManager.chromedriver().setup();
 		//		WebDriverManager.firefoxdriver().setup();
 		//		WebDriverManager.operadriver().setup();
 		//		WebDriverManager.iedriver().setup();
-		//ChromeOptions option = new ChromeOptions();
+		//		ChromeOptions option = new ChromeOptions();
 		//option.addArguments("--headless");
-		//driver = new ChromeDriver(option);
+		driver = new ChromeDriver();
 
 		FileInputStream fis = new FileInputStream("./src/main/java/Key2Actsource/Key2Act.properties");
 		prop.load(fis);

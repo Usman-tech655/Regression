@@ -3,17 +3,26 @@
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
   <test thread-count="1" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="com.genericode.Key2ActLogin">
+      <class name="com.genericode.Key2ActCreateC">
         <methods>
+          <include name="start"/>
+          <include name="TearDown"/>
+          <include name="createcompany"/>
+        </methods>
+      </class> <!-- com.genericode.Key2ActCreateC -->
+      <class name="com.genericode.Key2ActSignUp">
+        <methods>
+          <include name="signuppage"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.genericode.Key2ActLogin -->
-      <class name="com.genericode.Key2ActUpdatePass">
+      </class> <!-- com.genericode.Key2ActSignUp -->
+      <class name="com.genericode.Key2ActMenu">
         <methods>
-          <include name="updatepasswd"/>
+          <include name="ManageRoles"/>
           <include name="Setup"/>
+          <include name="EditCompanyView"/>
         </methods>
-      </class> <!-- com.genericode.Key2ActUpdatePass -->
+      </class> <!-- com.genericode.Key2ActMenu -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

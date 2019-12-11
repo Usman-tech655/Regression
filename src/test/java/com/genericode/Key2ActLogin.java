@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.Insite.qa.util.TestUtil;
 import com.key2act.qa.base.Key2ActBase;
 
-public class Key2ActLogin  {
+public class Key2ActLogin   {
 	WebDriver driver;
 
 
