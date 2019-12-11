@@ -1,6 +1,7 @@
 	package com.genericode;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import com.Insite.qa.util.TestUtil;
@@ -102,13 +103,13 @@ public class Key2ActLogin   {
 		 * pf.getSignout().get(0).click();
 		 
 
-	}
+	}*/
 
-	@AfterTest(enabled = false)
+	@AfterTest
 
-	public void TearDown() throws InterruptedException {
+	public void TearDown() {
 
 		driver.quit();
 	}
-*/
+
 }

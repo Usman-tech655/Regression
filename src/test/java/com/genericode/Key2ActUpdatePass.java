@@ -25,11 +25,6 @@ public class Key2ActUpdatePass extends UpdatePassword{
 		getupdatepwd();
 	 }
 	 
-	 @AfterTest (enabled =false)
-	 public void TearDown() {
-		 driver.quit();
-	 }
-	 
-	
+		
 
 }
