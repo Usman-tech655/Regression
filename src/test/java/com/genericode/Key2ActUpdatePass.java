@@ -3,6 +3,7 @@ package com.genericode;
 
 
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ import com.generic.UpdatePassword;
 
 
 public class Key2ActUpdatePass extends UpdatePassword{
-	
+	WebDriver driver;
 	
 	 @BeforeTest
 	 public void Setup() throws Throwable {
@@ -25,6 +26,6 @@ public class Key2ActUpdatePass extends UpdatePassword{
 		getupdatepwd();
 	 }
 	 
-		
+	 
 
 }

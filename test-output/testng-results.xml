@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75265" started-at="2019-12-11T21:07:28Z" finished-at="2019-12-11T21:08:44Z">
+  <suite name="Default suite" duration-ms="62116" started-at="2019-12-12T15:14:21Z" finished-at="2019-12-12T15:15:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75265" started-at="2019-12-11T21:07:28Z" finished-at="2019-12-11T21:08:44Z">
-      <class name="com.genericode.Key2ActUpdatePass">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.genericode.Key2ActUpdatePass@1794d431]" name="Setup" is-config="true" duration-ms="14789" started-at="2019-12-11T21:07:28Z" finished-at="2019-12-11T21:07:43Z">
+    <test name="Default test" duration-ms="62116" started-at="2019-12-12T15:14:21Z" finished-at="2019-12-12T15:15:23Z">
+      <class name="com.genericode.Key2ActSignUp">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Key2ActSignUp@1794d431]" name="setup" is-config="true" duration-ms="11235" started-at="2019-12-12T15:14:21Z" finished-at="2019-12-12T15:14:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="updatepasswd()[pri:0, instance:com.genericode.Key2ActUpdatePass@1794d431]" name="updatepasswd" duration-ms="60458" started-at="2019-12-11T21:07:43Z" finished-at="2019-12-11T21:08:44Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signuppage()[pri:0, instance:com.genericode.Key2ActSignUp@1794d431]" name="signuppage" duration-ms="50866" started-at="2019-12-12T15:14:32Z" finished-at="2019-12-12T15:15:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updatepasswd -->
-        <test-method status="FAIL" signature="TearDown()[pri:0, instance:com.genericode.Key2ActUpdatePass@1794d431]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-12-11T21:08:44Z" finished-at="2019-12-11T21:08:44Z">
+        </test-method> <!-- signuppage -->
+        <test-method status="FAIL" signature="TearDown()[pri:0, instance:com.genericode.Key2ActSignUp@1794d431]" name="TearDown" is-config="true" duration-ms="0" started-at="2019-12-12T15:15:23Z" finished-at="2019-12-12T15:15:23Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.genericode.Key2ActUpdatePass.TearDown(Key2ActUpdatePass.java:30)
+at com.genericode.Key2ActSignUp.TearDown(Key2ActSignUp.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,7 +50,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.genericode.Key2ActUpdatePass -->
+      </class> <!-- com.genericode.Key2ActSignUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
