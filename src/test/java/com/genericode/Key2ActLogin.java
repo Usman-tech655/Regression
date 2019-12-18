@@ -105,11 +105,11 @@ public class Key2ActLogin   {
 
 	}*/
 
-	@AfterTest
+	/*@AfterTest
 
 	public void TearDown() {
 
 		driver.quit();
 	}
-
+*/
 }

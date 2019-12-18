@@ -2,26 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="90872" started-at="2019-12-12T15:24:33Z" finished-at="2019-12-12T15:26:03Z">
+  <suite name="Surefire suite" duration-ms="91820" started-at="2019-12-18T15:47:48Z" finished-at="2019-12-18T15:49:19Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="90872" started-at="2019-12-12T15:24:33Z" finished-at="2019-12-12T15:26:03Z">
+    <test name="Surefire test" duration-ms="91820" started-at="2019-12-18T15:47:48Z" finished-at="2019-12-18T15:49:19Z">
       <class name="com.genericode.Key2ActLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Key2ActLogin@67b6d4ae]" name="setup" duration-ms="14698" started-at="2019-12-12T15:24:48Z" finished-at="2019-12-12T15:25:02Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Key2ActLogin@6537cf78]" name="setup" duration-ms="15396" started-at="2019-12-18T15:48:03Z" finished-at="2019-12-18T15:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.genericode.Key2ActLogin@67b6d4ae]" name="TearDown" is-config="true" duration-ms="597" started-at="2019-12-12T15:26:03Z" finished-at="2019-12-12T15:26:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
       </class> <!-- com.genericode.Key2ActLogin -->
       <class name="com.genericode.Key2ActUpdatePass">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.genericode.Key2ActUpdatePass@6537cf78]" name="Setup" is-config="true" duration-ms="15034" started-at="2019-12-12T15:24:33Z" finished-at="2019-12-12T15:24:48Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.genericode.Key2ActUpdatePass@617c74e5]" name="Setup" is-config="true" duration-ms="15514" started-at="2019-12-18T15:47:48Z" finished-at="2019-12-18T15:48:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="updatepasswd()[pri:0, instance:com.genericode.Key2ActUpdatePass@6537cf78]" name="updatepasswd" duration-ms="60531" started-at="2019-12-12T15:25:02Z" finished-at="2019-12-12T15:26:03Z">
+        <test-method status="PASS" signature="updatepasswd()[pri:0, instance:com.genericode.Key2ActUpdatePass@617c74e5]" name="updatepasswd" duration-ms="60887" started-at="2019-12-18T15:48:18Z" finished-at="2019-12-18T15:49:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatepasswd -->

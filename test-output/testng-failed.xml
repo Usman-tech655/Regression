@@ -5,8 +5,7 @@
     <classes>
       <class name="com.genericode.Key2ActLogin">
         <methods>
-          <include name="Testing"/>
-          <include name="TearDown"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.genericode.Key2ActLogin -->
     </classes>
