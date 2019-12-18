@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18168" started-at="2019-12-18T15:46:58Z" finished-at="2019-12-18T15:47:17Z">
+  <suite name="Default suite" duration-ms="15459" started-at="2019-12-18T16:27:23Z" finished-at="2019-12-18T16:27:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18168" started-at="2019-12-18T15:46:58Z" finished-at="2019-12-18T15:47:17Z">
+    <test name="Default test" duration-ms="15459" started-at="2019-12-18T16:27:23Z" finished-at="2019-12-18T16:27:38Z">
       <class name="com.genericode.Key2ActLogin">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Key2ActLogin@27efef64]" name="setup" duration-ms="18149" started-at="2019-12-18T15:46:58Z" finished-at="2019-12-18T15:47:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Key2ActLogin@27efef64]" name="setup" duration-ms="15443" started-at="2019-12-18T16:27:23Z" finished-at="2019-12-18T16:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
