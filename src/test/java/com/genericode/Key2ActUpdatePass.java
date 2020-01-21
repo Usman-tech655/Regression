@@ -13,17 +13,17 @@ import com.generic.UpdatePassword;
 
 
 
-public class Key2ActUpdatePass extends UpdatePassword{
+public class Key2ActUpdatePass {
 	WebDriver driver;
 	
 	 @BeforeTest
 	 public void Setup() throws Throwable {
-		 intiazlization(driver);
-		 login();
+		 UpdatePassword.intiazlization(driver);
+		 UpdatePassword.login();
 	 }
 	 @Test
 	 public void updatepasswd() throws InterruptedException {
-		getupdatepwd();
+		 UpdatePassword.getupdatepwd();
 	 }
 	 
 	 

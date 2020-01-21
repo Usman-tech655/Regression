@@ -1,9 +1,0 @@
-com\generic\IotHub.class
-com\generic\Createcompany.class
-com\generic\Menu.class
-com\generic\Singup.class
-com\key2act\PageObject\MasterPageFactory.class
-com\key2act\qa\base\Key2ActBase.class
-com\Insite\qa\util\TestUtil.class
-com\generic\ForgotPassword.class
-com\generic\UpdatePassword.class

@@ -12,45 +12,45 @@ import org.testng.annotations.*;
 
 import com.generic.Menu;
 
-public class Key2ActMenu extends Menu {
+public class Key2ActMenu {
 
 	WebDriver driver;
 	
 	@BeforeMethod
 	public void Setup() throws Throwable {
-		intiazlization(driver);
-		login();
-		getmenu();
-		getAdmin();	
+		Menu.intiazlization(driver);
+		Menu.login();
+		Menu.getmenu();
+		Menu.getAdmin();	
 	}
 	
 	@Test 
 	public void EditCompanyView() throws Throwable {
 		
-		geteditjcompany();
+		Menu.geteditjcompany();
 	}
 	/*@Test (enabled =false)
 	public void editbilling() throws Throwable {
 		Thread.sleep(3000);
-		geteditbilling();
+		Menu.geteditbilling();
 		
 	}
 	@Test (priority=2) (dependsOnMethods = {"IOT"})
 	public void ManageUsers() {
-		getmanageuser();
+		Menu.getmanageuser();
 	}
 	@Test 
 	public void ManageRole() {
-		getmanagerole();
+		Menu.getmanagerole();
 	}
 	@Test
 	public void DelUser() {
-		getdeletuser();
+		Menu.getdeletuser();
 	}*/
 	@Test (dependsOnMethods= {"EditCompanyView"})
 	public void ManageRoles() throws Throwable {
 		Thread.sleep(50000);
-		getmanagerole();
+		Menu.getmanagerole();
 	}
 	
 	

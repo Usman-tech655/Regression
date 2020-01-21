@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-import com.Insite.qa.util.TestUtil;
+import com.Insite.qa.util.Screenshot;
 import com.key2act.qa.base.Key2ActBase;
 
 public class Key2ActLogin   {
@@ -19,7 +19,7 @@ public class Key2ActLogin   {
 		driver= Key2ActBase.intiazlization(driver);
 		 Key2ActBase.login();
 		// Key2ActBase.captureScreenShot(driver, "login");
-		 TestUtil.captureScreenShot(driver, "LogIn");
+		 //Screenshot.captureScreenShot(driver, "LogIn");
 		 
 		 
 	}

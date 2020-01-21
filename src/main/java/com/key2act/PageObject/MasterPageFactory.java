@@ -194,14 +194,53 @@ public class MasterPageFactory {
 	private List<WebElement>Aserial;
 	@FindBy(xpath="//span[text()='Create']")
 	private List<WebElement>ASave;
-	@FindBy(xpath="//div[@id='root']/div/div/div[2]/div[3]/main/div/table/tbody/tr[18]/td[7]/button/span/i")
-	private List<WebElement>assignA;
+	@FindBy(xpath="(//*[@class='fas fa-ellipsis-h'])[19]")
+	private List<WebElement>Agentellipsis;
 	@FindBy(xpath="//text()[.='Assign Agent']/ancestor::li[1]")
 	private List<WebElement>AgentAssign;
-	@FindBy(xpath="//text()[.='Manage Agent']/ancestor::li[1]")
+	//@FindBy(xpath="//li[text()='Manage Agent']")
+	@FindBy(xpath="//*[contains(text(),'Manage Agent')]")
 	private List <WebElement>ManageA;
 	@FindBy(xpath="(//span[text()='Configure BAS Network'])[1]")
 	private List<WebElement>config;
+	@FindBy(xpath="//span[text()='Reboot Agent']")
+	private List<WebElement>rebootA;
+	@FindBy(xpath="//*[text()='Restart Application']")
+	private List<WebElement> restartA;
+	@FindBy(xpath="//*[text()='Ping Agent']")
+	private List<WebElement>pingA;
+	@FindBy(xpath="//*[text()='Rename Agent']")
+	private List<WebElement>Arename;
+	//Close Rename popup
+	@FindBy(xpath="//*[@class='fa fa-times']")
+	private List<WebElement>closepop;
+	@FindBy(xpath="//*[text()='Update Agent Time Zone']")
+	private List<WebElement>UpDateTime;
+	@FindBy(xpath="//*[@id='select-timeZone']")
+	private List<WebElement>ATimezone;
+	@FindBy(xpath="//li[text()='America/Nipigon']")
+	private List<WebElement>ATime;
+	@FindBy(xpath="//*[text()='Cancel']")
+	private List<WebElement>TimeC;
+	@FindBy(xpath="//*[text()='Assign Agent']")
+	private List<WebElement>Assign;
+	@FindBy(xpath="//*[@id='serialNumber']")
+	private List<WebElement>ASerial;
+// Need to remove this below xpath after getting the serial num
+	@FindBy(xpath="//*[@class='fa fa-times']")
+	private List<WebElement>closeAssign;
+	@FindBy(xpath="//*[text()='Factory Reset']")
+	private List <WebElement>AFreset;
+	@FindBy(xpath="//*[@id='reset']")
+	private List <WebElement>ResetAgent;
+	@FindBy(xpath="//*[text()='confirm']")
+	private List<WebElement>ConfirmR;
+	@FindBy(xpath="//*[text()='Delete Agent']")
+	private List<WebElement>DeleteA;
+	@FindBy(xpath="//*[@id='delete']")
+	private List<WebElement>WriteDel;
+	@FindBy(xpath="//*[text()='confirm']")
+	private List<WebElement>ConfirmDel;
 	@FindBy(xpath="//button[text()='Forgot Password?']")
 	private List<WebElement>forgot;
 	@FindBy(xpath="//*[@id='email']")
@@ -518,8 +557,21 @@ public class MasterPageFactory {
 	public List<WebElement> getAgentAssign() {
 		return AgentAssign;
 	}
-	public List<WebElement> getAssignA() {
-		return assignA;
+	
+	
+	public List<WebElement> getAgentellipsis() {
+		return Agentellipsis;
+	}
+	public List<WebElement> getRebootA() {
+		return rebootA;
+	}
+	
+	public List<WebElement> getArename() {
+		return Arename;
+	}
+	
+	public List<WebElement> getClosepop() {
+		return closepop;
 	}
 	public List<WebElement> getForgot() {
 		return forgot;
@@ -532,6 +584,66 @@ public class MasterPageFactory {
 	}
 	public List<WebElement> getManageA() {
 		return ManageA;
+	}
+	
+	public List<WebElement> getRestartA() {
+		return restartA;
+	}
+	
+	public List<WebElement> getPingA() {
+		return pingA;
+	}
+	 
+	public List<WebElement> getUpDateTime() {
+		return UpDateTime;
+	}
+	
+	public List<WebElement> getATimezone() {
+		return ATimezone;
+	}
+	
+	public List<WebElement> getATime() {
+		return ATime;
+	}
+	
+	public List<WebElement> getTimeC() {
+		return TimeC;
+	}
+	
+	public List<WebElement> getAssign() {
+		return Assign;
+	}
+	
+	public List<WebElement> getASerial() {
+		return ASerial;
+	}
+	
+	public List<WebElement> getCloseAssign() {
+		return closeAssign;
+	}
+	
+	public List<WebElement> getAFreset() {
+		return AFreset;
+	}
+	
+	public List<WebElement> getResetAgent() {
+		return ResetAgent;
+	}
+	
+	public List<WebElement> getConfirmR() {
+		return ConfirmR;
+	}
+	
+	public List<WebElement> getDeleteA() {
+		return DeleteA;
+	}
+	
+	public List<WebElement> getWriteDel() {
+		return WriteDel;
+	}
+	
+	public List<WebElement> getConfirmDel() {
+		return ConfirmDel;
 	}
 	public List<WebElement> getConfig() {
 		return config;

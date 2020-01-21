@@ -11,7 +11,7 @@ public class UpdatePassword extends Key2ActBase{
 		super();
 	}
 	
-	public  WebDriver getupdatepwd() throws InterruptedException {
+	public static WebDriver getupdatepwd() throws InterruptedException {
 		Thread.sleep(20000);
 		pf.getChange().get(0).click();
 		pf.getUpdate().get(0).sendKeys(prop.getProperty("old"));

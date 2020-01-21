@@ -9,7 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import com.Insite.qa.util.TestUtil;
+import com.Insite.qa.util.ActionClass;
+import com.Insite.qa.util.Highlighter;
+import com.Insite.qa.util.Screenshot;
 
 import com.key2act.PageObject.MasterPageFactory;
 
@@ -40,14 +42,15 @@ public class Key2ActBase {
 
 		pf = new MasterPageFactory(driver);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Screenshot.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Screenshot.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 
 		return driver;
 
 	}
 	public static WebDriver login() throws Throwable {
+		//Highlighter.color(driver, pf.getEmail().get(0));
 		pf.getEmail().get(0).sendKeys(prop.getProperty("email")); //email for .work
 		pf.getPass().get(0).sendKeys(prop.getProperty("pass")); //pass for .work
 

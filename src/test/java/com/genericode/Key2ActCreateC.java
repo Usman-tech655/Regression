@@ -1,5 +1,6 @@
 package com.genericode;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -8,17 +9,18 @@ import com.generic.Createcompany;
 
 
 
-public class Key2ActCreateC extends Createcompany {
+public class Key2ActCreateC  {
+	WebDriver driver;
 
 	@BeforeTest
 	public void start() throws Throwable{
-		intiazlization(driver);
-		login();
+		Createcompany.intiazlization(driver);
+		Createcompany.login();
 
 	}
 	@Test
 	public void createcompany() throws InterruptedException {
-		company() ;
+		Createcompany.company() ;
 	}
 	@AfterTest (enabled = false)
 	public void TearDown() {

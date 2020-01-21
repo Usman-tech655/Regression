@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.Insite.qa.util.TestUtil;
+import com.Insite.qa.util.Screenshot;
 import com.key2act.PageObject.MasterPageFactory;
 import com.key2act.qa.base.Key2ActBase;
 
@@ -25,7 +25,7 @@ public class Singup extends Key2ActBase {
 	}
 	
 	
-	public  WebDriver getsignup() throws InterruptedException {
+	public static  WebDriver getsignup() throws InterruptedException {
 		Thread.sleep(30000);
 
 		pf.getSignup().get(0).click();
