@@ -11,8 +11,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import com.generic.Menu;
+import com.report.ExtentReport;
 
-public class Key2ActMenu {
+public class Key2ActMenu extends ExtentReport {
 
 	WebDriver driver;
 	

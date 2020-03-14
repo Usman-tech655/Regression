@@ -14,6 +14,11 @@ public class ForgotPassword extends Key2ActBase {
 	
 	
 	
+	public ForgotPassword(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
 	public static WebDriver getForgotpwd() throws Throwable {
 		
 		//Thread.sleep(30000);

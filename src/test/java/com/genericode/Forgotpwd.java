@@ -4,9 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import com.generic.ForgotPassword;
+import com.report.ExtentReport;
 
 
-public class Forgotpwd   {
+public class Forgotpwd  extends ExtentReport {
 	WebDriver driver;
 	
 	@BeforeTest

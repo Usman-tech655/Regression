@@ -5,8 +5,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.generic.Singup;
+import com.report.ExtentReport;
 
-public class Key2ActSignUp {
+public class Key2ActSignUp extends ExtentReport {
 
 	public Key2ActSignUp() throws Throwable {
 		super();

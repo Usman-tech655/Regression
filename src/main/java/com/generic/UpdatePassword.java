@@ -7,10 +7,12 @@ import com.key2act.qa.base.Key2ActBase;
 
 public class UpdatePassword extends Key2ActBase{
 	 
-	public UpdatePassword() {
-		super();
-	}
 	
+	public UpdatePassword(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
 	public static WebDriver getupdatepwd() throws InterruptedException {
 		Thread.sleep(20000);
 		pf.getChange().get(0).click();

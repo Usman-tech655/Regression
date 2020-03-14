@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="com.genericode.Key2ActLogin">
+        <methods>
+          <include name="before"/>
+          <include name="setup"/>
+          <include name="aftermethod"/>
+          <include name="sfterSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.genericode.Key2ActLogin -->
+      <class name="com.genericode.Key2ActUpdatePass">
+        <methods>
+          <include name="before"/>
+          <include name="updatepasswd"/>
+          <include name="aftermethod"/>
+          <include name="sfterSuite"/>
+          <include name="setUp"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.genericode.Key2ActUpdatePass -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

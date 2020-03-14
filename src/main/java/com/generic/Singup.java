@@ -20,7 +20,7 @@ import com.key2act.qa.base.Key2ActBase;
 public class Singup extends Key2ActBase {
 
 	public Singup() throws Throwable {
-		super();
+		super(driver);
 		// TODO Auto-generated constructor stub
 	}
 	

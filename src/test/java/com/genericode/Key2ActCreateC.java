@@ -5,11 +5,12 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.generic.Createcompany;
+import com.report.ExtentReport;
 
 
 
 
-public class Key2ActCreateC  {
+public class Key2ActCreateC extends ExtentReport  {
 	WebDriver driver;
 
 	@BeforeTest

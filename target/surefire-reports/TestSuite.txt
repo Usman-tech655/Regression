@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 27.384 s <<< FAILURE! - in TestSuite
+com.genericode.Key2ActLogin.setUp  Time elapsed: 0.372 s  <<< FAILURE!
+java.lang.NullPointerException
+
+com.genericode.Key2ActUpdatePass.setUp  Time elapsed: 0.373 s  <<< FAILURE!
+java.lang.NullPointerException
+

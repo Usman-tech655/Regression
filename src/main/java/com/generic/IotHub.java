@@ -14,7 +14,11 @@ import com.key2act.qa.base.Key2ActBase;
 public class IotHub extends Key2ActBase {
 	 
 
-	 public static WebDriver getIot() throws Throwable {
+	 public IotHub(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	public static WebDriver getIot() throws Throwable {
 		 Thread.sleep(3000);
 		
 		 pf.getIot().get(0).click();
@@ -50,6 +54,8 @@ public class IotHub extends Key2ActBase {
 		 
 		 return driver;
 	 }
+	 
+	 
 	 public static WebDriver AgentAction() throws Throwable{
 		 Thread.sleep(2000);
 		 pf.getAgentellipsis().get(0).click();
@@ -87,7 +93,8 @@ public class IotHub extends Key2ActBase {
 		 pf.getATimezone().get(0).click();
 		 Thread.sleep(10000);
 		 pf.getATime().get(0).click();
-		 //Thread.sleep(10000);
+		 //Thread.sleep(10000);)
+		
 		 pf.getTimeC().get(0).click();
 		 return driver;
 	 }

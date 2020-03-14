@@ -9,11 +9,12 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.generic.UpdatePassword;
+import com.report.ExtentReport;
 
 
 
 
-public class Key2ActUpdatePass {
+public class Key2ActUpdatePass extends ExtentReport {
 	WebDriver driver;
 	
 	 @BeforeTest

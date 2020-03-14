@@ -64,6 +64,8 @@ public class MasterPageFactory {
 		return createc;
 	}
 
+	@FindBy(xpath="//a[text()='Architect']")
+	private  WebElement Architect;
 	@FindBy(xpath="//*[text()='Update']")
 	private List<WebElement>create1;
 	//@FindBy(xpath="//*[@id='name']")
@@ -201,6 +203,8 @@ public class MasterPageFactory {
 	//@FindBy(xpath="//li[text()='Manage Agent']")
 	@FindBy(xpath="//*[contains(text(),'Manage Agent')]")
 	private List <WebElement>ManageA;
+	@FindBy(xpath="//span[text()='View BAS Inventory']")
+	private WebElement ViewBas;
 	@FindBy(xpath="(//span[text()='Configure BAS Network'])[1]")
 	private List<WebElement>config;
 	@FindBy(xpath="//span[text()='Reboot Agent']")
@@ -260,7 +264,102 @@ public class MasterPageFactory {
 		wait.until(ExpectedConditions.elementToBeClickable((By) billingsave));
 	}
 	
-
+	//Home
+	@FindBy(xpath="(//img[@src='/assets/images/subscribeIconOutline.svg'])[8]")
+	private WebElement Subclient;	
+	@FindBy(xpath="//*[@name='email']")
+	private WebElement CheckBox;
+	@FindBy(xpath=("//*[@name='sms']"))
+	private WebElement SmsBox;
+	@FindBy(xpath="//span[text()='Subscribe']")
+	private WebElement SubSave;
+	
+	
+	//Subscriptions
+	@FindBy(xpath="//a[text()='Subscriptions']")
+	private WebElement sub;
+	@FindBy(xpath="(//*[@class='fas fa-ellipsis-h'])[1]")
+	private WebElement SubElsp;
+	@FindBy(xpath="//li[text()='Unsubscribe']")
+	private WebElement UnSubUser;
+	@FindBy(xpath="//img[@src='/assets/images/ContactSubscriptionsIconOutline.svg']")
+	private WebElement ClientSub;
+	@FindBy(xpath="(//*[@class='fas fa-ellipsis-h'])[1]")
+	private WebElement ClientElp;
+	@FindBy(xpath="//li[text()='Unsubscribe']")
+	private WebElement ClientUnSub;
+	
+	// Architect
+	@FindBy(xpath="//*[text()='New Entity']")
+	private WebElement Entity;
+	@FindBy(xpath="//*[text()='Client']")
+	private WebElement Client;
+	@FindBy(xpath="//input[@id='clientName']")
+	private WebElement CrtClient;
+	@FindBy(xpath="(//text()[.='​']/ancestor::div[1])[3]")
+	private WebElement BusinessT;
+	@FindBy(xpath="//li[text()='Construction']")
+	private WebElement SelectBusiness;
+	@FindBy(xpath="//*[@id='addressSearch']")
+	private WebElement searchAdd;
+	@FindBy(xpath="//span[text()='713 Bergen Avenue, Jersey City, NJ, USA']")
+	private WebElement selectaddres;
+	@FindBy(xpath="//span[text()='Create']")
+	private WebElement ClientSave;
+	//Client Site
+	@FindBy(xpath="//*[text()='Usman Client']")
+	private WebElement Site;
+	@FindBy(xpath="//*[text()='Create a new Site']")
+	private WebElement Usmansite;
+	@FindBy(name="name")
+	private WebElement Sitename;
+	@FindBy(id="select-buildingType")
+	private WebElement SiteType;	
+	@FindBy(xpath="//li[text()='Fast Food Restaurant']")
+	private WebElement SiteType1;
+	@FindBy(xpath="//*[@id='squareFootage']")
+	private WebElement SFoot;
+	@FindBy(xpath="//*[@id='select-fuelTypes']")
+	private WebElement FuelTypes;
+	@FindBy(xpath="//span[text()='Natural Gas']")
+	private WebElement SelectFT;
+	@FindBy(xpath="//input[@type='text'][@name='name']")
+	private WebElement Tab;
+	@FindBy(xpath="//span[text()='Create a new Campus']")
+	private WebElement Campus;
+	@FindBy(xpath="//*[@id='select-clientName']")
+	private WebElement ClName;
+	@FindBy(xpath="//span[text()='Usman Client']")
+	private WebElement CleintName;
+	@FindBy(xpath="//input[@id='campusName']")
+	private WebElement CampusName;
+	@FindBy(xpath="//span[text()='Create']")
+	private WebElement CampusSave;
+	@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[17]/span[1]/i[1]")
+	private WebElement ClientDrp;
+	@FindBy(xpath="//span[text()=concat('Usman',\"'\",'s Fav Food')]	")
+	private WebElement eqp;
+	@FindBy(xpath="//span[text()='Create a new Equipment']")
+	private WebElement CreateEqp;
+	@FindBy(xpath="//*[@id='select-client']")
+	private WebElement ClientNameDrp;
+	@FindBy(xpath="(//text()[.='Usman Client']/ancestor::li[1])[2]")
+	private WebElement SelectClnt;
+	@FindBy(xpath="//*[@id='select-site']")
+	private WebElement SelectSite;
+	@FindBy(xpath="//text()[.=concat('Justin',\"'\",'s House')]/ancestor::li[1]")
+	private WebElement SelectSiteName;
+	@FindBy(xpath="//*[@id='name']")
+	private WebElement GiveName;
+	@FindBy(xpath="//*[@id='select-equipmentType']")
+	private WebElement EqpType;
+	@FindBy(xpath="//*[text()='Blower Coil']")
+	private WebElement EqpTypeSelect;
+	@FindBy(xpath="//span[text()='Create']")
+	private WebElement EqpSave;
+	@FindBy(xpath="//*[@class='jss262 jss523 jss526 jss531 jss532 jss520 jss521 CreateEntityModal_selectMenuItem__2Lg6t']")
+	private WebElement DropDownCancel;
+			
 
 
 
@@ -271,6 +370,7 @@ public class MasterPageFactory {
 
 
 
+	
 	public List<WebElement> getSignout() {
 		return signout;
 	}
@@ -346,7 +446,11 @@ public class MasterPageFactory {
 	public List<WebElement> getContractor() {
 		return ctr;
 	}
+	
 
+	public WebElement getArchitect() {
+		return Architect;
+	}
 	public List<WebElement> getAddress() {
 		return address;
 	}
@@ -562,6 +666,10 @@ public class MasterPageFactory {
 	public List<WebElement> getAgentellipsis() {
 		return Agentellipsis;
 	}
+	
+	public WebElement getViewBas() {
+		return ViewBas;
+	}
 	public List<WebElement> getRebootA() {
 		return rebootA;
 	}
@@ -641,7 +749,20 @@ public class MasterPageFactory {
 	public List<WebElement> getWriteDel() {
 		return WriteDel;
 	}
+	public WebElement getCheckBox() {
+		return CheckBox;
+	}
 	
+	public WebElement getSmsBox() {
+		return SmsBox;
+	}
+	
+	public WebElement getSubSave() {
+		return SubSave;
+	}
+	public WebElement getSubclient() {
+		return Subclient;
+	}
 	public List<WebElement> getConfirmDel() {
 		return ConfirmDel;
 	}
@@ -651,6 +772,171 @@ public class MasterPageFactory {
 	public List<WebElement> getSignObar() {
 		return signObar;
 	}
+	
+	//Subscriptions Getter
+	public WebElement getSub() {
+		return sub;
+	}
+	public WebElement getSubElsp() {
+		return SubElsp;
+	}
+	public WebElement getUnSubUser() {
+		return UnSubUser;
+	}
+	public WebElement getClientSub() {
+		return ClientSub;
+	}
+	public WebElement getClientElp() {
+		return ClientElp;
+	}
+	public WebElement getClientUnSub() {
+		return ClientUnSub;
+	}
+	 //Architect Getters
+	public WebElement getEntity() {
+		return Entity;
+	}
+	public WebElement getClient() {
+		return Client;
+	}
+	public WebElement getCrtClient() {
+		return CrtClient;
+	}
+	public WebElement getBusinessT() {
+		return BusinessT;
+	}
+	public WebElement getSelectBusiness() {
+		return SelectBusiness;
+	}
+	public WebElement getSearchAdd() {
+		return searchAdd;
+	}
+	public WebElement getSelectaddres() {
+		return selectaddres;
+	}
+	public WebElement getClientSave() {
+		return ClientSave;
+	}
+	public WebElement getSite() {
+		return Site;
+		
+	}
+	public WebElement getUsmansite() {
+		return Usmansite;
+	}
+	public WebElement getSitename() {
+		return Sitename;
+	}
+	public WebElement getSiteType() {
+		return SiteType;
+	}
+	public WebElement getSiteType1() {
+		return SiteType1;
+	}
+	public WebElement getSFoot() {
+		return SFoot;
+	}
+	public WebElement getFuelTypes() {
+		return FuelTypes;
+	}
+	public WebElement getSelectFT() {
+		return SelectFT;
+	}
+	public WebElement getTab() {
+		return Tab;
+	}
+	
+	public WebElement getCampus() {
+		return Campus;
+	}
+	
+	
+	
+	public WebElement getClientDrp() {
+		return ClientDrp;
+	}
+	public WebElement getEqp() {
+		return eqp;
+	}
+	
+	public WebElement getCreateEqp() {
+		return CreateEqp;
+	}
+	
+	public WebElement getClientNameDrp() {
+		return ClientNameDrp;
+	}
+	
+	public WebElement getEqpSave() {
+		return EqpSave;
+	}
+	public WebElement getClName() {
+		return ClName;
+	}
+	public WebElement getCleintName() {
+		return CleintName;
+	}
+	
+	public WebElement getSelectClnt() {
+		return SelectClnt;
+	}
+	
+	public WebElement getSelectSite() {
+		return SelectSite;
+	}
+	
+	public WebElement getSelectSiteName() {
+		return SelectSiteName;
+	}
+	
+	public WebElement getGiveName() {
+		return GiveName;
+	}
+	
+	public WebElement getEqpType() {
+		return EqpType;
+	}
+	public WebElement getCampusName() {
+		return CampusName;
+	}
+	
+	
+	public WebElement getEqpTypeSelect() {
+		return EqpTypeSelect;
+	}
+	public WebElement getCampusSave() {
+		return CampusSave;
+	}
+	public WebDriverWait getWait() {
+		return wait;
+	}
+	public List<WebElement> getBillingcity() {
+		return billingcity;
+	}
+	public WebElement getDropDownCancel() {
+		return DropDownCancel;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -5,10 +5,13 @@ import org.openqa.selenium.WebDriver;
 import com.key2act.qa.base.Key2ActBase;
 
 public class Menu extends Key2ActBase{
-	public Menu () {
-		super();
-	}
 	
+	
+	public Menu(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
 	public static WebDriver geteditjcompany() throws Throwable {
 		Thread.sleep(3000);
 		pf.getEditcompanyy().get(0).click();

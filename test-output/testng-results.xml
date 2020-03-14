@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42075" started-at="2020-01-21T21:09:15Z" finished-at="2020-01-21T21:09:57Z">
+  <suite name="Default suite" duration-ms="67520" started-at="2020-03-10T14:34:07Z" finished-at="2020-03-10T14:35:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42075" started-at="2020-01-21T21:09:15Z" finished-at="2020-01-21T21:09:57Z">
-      <class name="com.genericode.Forgotpwd">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.genericode.Forgotpwd@7cd62f43]" name="setup" is-config="true" duration-ms="11684" started-at="2020-01-21T21:09:15Z" finished-at="2020-01-21T21:09:27Z">
+    <test name="Default test" duration-ms="67520" started-at="2020-03-10T14:34:07Z" finished-at="2020-03-10T14:35:15Z">
+      <class name="com.ArchitectTest.CreateEqpTest">
+        <test-method status="PASS" signature="Equip()[pri:0, instance:com.ArchitectTest.CreateEqpTest@77cd7a0]" name="Equip" is-config="true" duration-ms="42729" started-at="2020-03-10T14:34:07Z" finished-at="2020-03-10T14:34:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="password()[pri:0, instance:com.genericode.Forgotpwd@7cd62f43]" name="password" duration-ms="30369" started-at="2020-01-21T21:09:27Z" finished-at="2020-01-21T21:09:57Z">
+        </test-method> <!-- Equip -->
+        <test-method status="PASS" signature="CreateEqpi()[pri:0, instance:com.ArchitectTest.CreateEqpTest@77cd7a0]" name="CreateEqpi" duration-ms="24776" started-at="2020-03-10T14:34:50Z" finished-at="2020-03-10T14:35:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- password -->
-      </class> <!-- com.genericode.Forgotpwd -->
+        </test-method> <!-- CreateEqpi -->
+      </class> <!-- com.ArchitectTest.CreateEqpTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
